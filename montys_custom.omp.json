@@ -4,16 +4,25 @@
     {
       "alignment": "left",
       "segments": [
-        {
-          "background": "#0077c2",
-          "foreground": "#ffffff",
-          "leading_diamond": "\u256d\u2500\ue0b6",
-          "style": "diamond",
-          "template": "\uf120 {{ .Name }} ",
-          "type": "shell"
+	{
+          "foreground": "#bdb2ff",
+          "style": "plain",
+          "template": "\u256d\u2500\ue0b6",
+          "type": "text"
         },
         {
-          "background": "#DA627D",
+          "background": "#bdb2ff",
+          "foreground": "#011627",
+          "leading_diamond": "\u256d\u2500\ue0b6",
+          "properties": {
+            "windows": "\uF303"
+          },
+          "style": "powerline",
+          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}  ",
+          "type": "os"
+        },
+        {
+          "background": "#b5838d",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "properties": {
@@ -27,7 +36,7 @@
           "type": "path"
         },
         {
-          "background": "#FCA17D",
+          "background": "#ccd5ae",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "properties": {
@@ -40,7 +49,7 @@
           "type": "git"
         },
         {
-          "background": "#76b367",
+          "background": "#ccd5ae",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
@@ -48,7 +57,7 @@
           "type": "node"
         },
         {
-          "background": "#83769c",
+          "background": "#f19c79",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "properties": {
@@ -59,7 +68,7 @@
           "type": "executiontime"
         },
         {
-          "background": "#33658A",
+          "background": "#84a59d",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "properties": {
@@ -70,7 +79,7 @@
           "type": "time"
         },
         {
-          "background": "#2e9599",
+          "background": "#cdb4db",
           "background_templates": [
             "{{ if gt .Code 0 }}red{{ end }}"
           ],
@@ -92,13 +101,13 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#21c7c7",
+          "foreground": "#bdb2ff",
           "style": "plain",
           "template": "\u2570\u2500",
           "type": "text"
         },
         {
-          "foreground": "#e0f8ff",
+          "foreground": "#bdb2ff",
           "foreground_templates": ["{{ if gt .Code 0 }}#ef5350{{ end }}"],
           "properties": {
             "always_enabled": true
