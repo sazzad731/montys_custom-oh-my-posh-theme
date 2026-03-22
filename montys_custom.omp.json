@@ -5,14 +5,14 @@
       "alignment": "left",
       "segments": [
         {
-          "foreground": "#bdb2ff",
+          "foreground": "#DA627D",
           "style": "plain",
           "template": "\u256d\u2500\ue0b6",
           "type": "text"
         },
         {
-          "background": "#bdb2ff",
-          "foreground": "#011627",
+          "background": "#DA627D",
+          "foreground": "#ffffff",
           "leading_diamond": "\u256d\u2500\ue0b6",
           "properties": {
             "windows": "\uF303"
@@ -22,7 +22,7 @@
           "type": "os"
         },
         {
-          "background": "#84a59d",
+          "background": "#FCA17D",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "properties": {
@@ -45,7 +45,7 @@
           "type": "node"
         },
         {
-          "background": "#bdb2ff",
+          "background": "#2e9599",
           "background_templates": [
             "{{ if gt .Code 0 }}red{{ end }}"
           ],
@@ -86,7 +86,7 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#bdb2ff",
+          "foreground": "#DA627D",
           "style": "plain",
           "template": "\u2570\u2500\ue285\ueab6 ",
           "type": "text"
